@@ -1,6 +1,7 @@
 ---
 title: VC will be the best way finance learning
 caption: AI will invalidate the business model of paying to learn.
+src: https://github.com/karthikuppu/writing/commits/main/vc-learning.md
 started: November 2024
 heroImageSrc: /images/vc-learning/vc-learning.png
 ---

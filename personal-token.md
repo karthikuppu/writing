@@ -1,14 +1,16 @@
 ---
 title: Personal token white paper v0.1
 started: December 2024
+src: https://github.com/karthikuppu/writing/commits/main/personal-token.md
 heroImageSrc: /images/individual/individual.png
 ---
 
-*This essay is an early exploration of a financial instrument (personal tokens) that lets people raise money in exchange for equity in their future outcomes. This is a continuation of my [previous essay](/vc-learning) ("VC will be the best way to finance learning") in which I explore why we will need personal tokens to democratize access to opportunity as AI becomes more powerful.*
+_This essay is an early exploration of a financial instrument (personal tokens) that lets people raise money in exchange for equity in their future outcomes. This is a continuation of my [previous essay](/vc-learning) ("VC will be the best way to finance learning") in which I explore why we will need personal tokens to democratize access to opportunity as AI becomes more powerful._
 
 ### A personal token
 
 A personal token is a fictional entity that represents an individual's equity in two kinds of assets:
+
 1. Equity in other personal tokens.
 2. Equity in companies.
 
@@ -24,13 +26,13 @@ With such a personal token system, ambitious individuals can raise money by sell
 
 Examples:
 
-Bob is a high schooler with a podcast in which he interviews people he finds interesting. He demonstrates a knack for asking the right questions & choosing interesting people to interview. Ryan, A famous podcaster recognizes that Bob may have a special talent and decides to invest $50k in Bob in exchange for a 3% equity in Bob's personal token. 
+Bob is a high schooler with a podcast in which he interviews people he finds interesting. He demonstrates a knack for asking the right questions & choosing interesting people to interview. Ryan, A famous podcaster recognizes that Bob may have a special talent and decides to invest $50k in Bob in exchange for a 3% equity in Bob's personal token.
 
 Ryan is now incentivized to mentor Bob and help him succeed. Ryan creates wealth when Bob does. Bob can now afford to dedicate all of his time towards his podcast and will likely improve much faster than if he had to also get a part time to job to help him survive and invest in his podcast.
 
-Amy is an undergrad researching nuclear power. She just published a paper that was met with a lukewarm reception at a popular conference, but caught the eye of Maya, a startup CEO building a nuclear power plant. Maya finds Amy's research promising and invests in Amy's personal token to enable Amy to follow her natural curiosity in her research without worrying about grants which she's struggling to get because the community doesn't quite value her research. 
+Amy is an undergrad researching nuclear power. She just published a paper that was met with a lukewarm reception at a popular conference, but caught the eye of Maya, a startup CEO building a nuclear power plant. Maya finds Amy's research promising and invests in Amy's personal token to enable Amy to follow her natural curiosity in her research without worrying about grants which she's struggling to get because the community doesn't quite value her research.
 
-Maya doesn't consider her investment in Amy to be that risky because Maya is convinced that nuclear power will create incredible economic value within a  couple of decades, and that the skills Amy will build through her research - regardless of how successful her current research direction is - will make Amy very wealthy, and therefore will make Maya wealthy.
+Maya doesn't consider her investment in Amy to be that risky because Maya is convinced that nuclear power will create incredible economic value within a couple of decades, and that the skills Amy will build through her research - regardless of how successful her current research direction is - will make Amy very wealthy, and therefore will make Maya wealthy.
 
 ### Why
 
@@ -40,7 +42,7 @@ As AI becomes better, the power law distribution of outcomes will become more ex
 
 Personal tokens enables those with potential to gain access to valuable capital that they likely wouldn't have access to otherwise - regardless of background.
 
-*(Further reading: my [previous essay](/vc-learning) that dives into this in greater depth).*
+_(Further reading: my [previous essay](/vc-learning) that dives into this in greater depth)._
 
 ### A new primitive
 
@@ -50,7 +52,7 @@ To be clear, the starting point for a personal token from a legal perspective ma
 
 A personal token is inseparable from the individual. Unlike a company who's owners can change entirely, an individual can't give away their personal token such that they no longer have it. In another sense, a personal token is like an abstraction "above" all the companies that a person will have equity in.
 
-A personal token also represents a different sort of behavior: investing in people *before* they may have something specific that they are going to create. Companies are generally formed when there is a specific product or service that the founders want to create.
+A personal token also represents a different sort of behavior: investing in people _before_ they may have something specific that they are going to create. Companies are generally formed when there is a specific product or service that the founders want to create.
 
 Even if the underlying implementation is a "company", from a use-case, behavioral, social context, a personal token is a new financial primitive.
 
@@ -62,7 +64,7 @@ Before we think about how to implement this personal token system, we need to kn
 
 Investors should have confidence that they will receive payouts. They should have confidence in the system's ability to prevent fraud. They should have some recourse in the case of fraud (i.e. an individual raises money and runs with it, or doesn't accurately disclose their earnings from equity sales).
 
-In addition to trust, creating a personal token should be fast, simple, and affordable. Eventually, everyone will just have one by default similar to IDs, etc.  Also, capital distribution - when an individual sells equity in a company or a personal token, what they gain is distributed amongst holders of their personal token proportional to how much equity they have - should become instantaneous. But, nothing matters without sufficient trust.
+In addition to trust, creating a personal token should be fast, simple, and affordable. Eventually, everyone will just have one by default similar to IDs, etc. Also, capital distribution - when an individual sells equity in a company or a personal token, what they gain is distributed amongst holders of their personal token proportional to how much equity they have - should become instantaneous. But, nothing matters without sufficient trust.
 
 ### How
 
@@ -82,29 +84,34 @@ Implementing capital distribution within the network (when equity in another per
 
 Implementing capital distribution when Alice sells equity in a company is more challenging. When equity in a company is cashed out, Alice technically "owes" those who hold equity in her personal token their share of the capital Alice gained from selling equity in a company.
 
-Alice will need to report this somehow, and be able to transfer value within the network to those who hold equity in Alice's personal token. 
+Alice will need to report this somehow, and be able to transfer value within the network to those who hold equity in Alice's personal token.
 
 Equity in the real world must be reflected on chain, and must be kept in sync.
 
 <TODO>Propose good ways to record and sync on chain record of equity in companies with reality.</TODO>
 
 #### Preventing fraud.
+
 Let's say Dan is a bad actor: he wants to raise money on this network without any intention to actually create value in the world (or hide it) and just run away with the money he raises from investors. Dan would then be incentivized to hide his successes in the real world from the network so that he doesn't have to pay investors their share of the value he's created in the world.
 
 The success of this personal token network depends on how well it can dis-incentivize bad actors like Dan.
 
 Some ideas on how this can be done:
+
 1. Once it's clear someone is a fraud, block them from participating in the network in the future: meaning they cannot invest in others' personal tokens. Over time this will be the most powerful lever to minimize fraud because the economic potential of investing in people will be enormous.
 2. Track their successes in the real world and identify discrepancies (e.g. they may say they joined a startup on LinkedIn, but haven't reported that they've gained equity in a company to their investors).
 3. Ensure all investments comply with regulations around securities so that in the case of fraud users have access to the courts to sue fraudsters. As the network becomes more powerful, it will rely less on the public courts, and more on incentives that will keep people in line (i.e. people will not be want to lose out on the opportunity to profit from personal tokens).
 
 #### Identity.
+
 In order to implement these ideas, each user must be associated with their real-world identity (e.g. government issued ID / something like [WorldID](https://world.org/world-id)). Users can't just create new personal tokens and disassociate with their past.
 
 #### Privacy.
+
 Privacy can be supported via [zero knowledge proofs](https://vitalik.eth.limo/general/2021/01/26/snarks.html) so that a person can keep information about their investments private.
 
 #### Sufficiently decentralized governance.
+
 I currently can't see a way in which the network can be completely decentralized because if it were, how would fraud be identified, and how would bad actors be kicked out of the network? Actions like these can't just be put to a vote. There needs to be some central authority with the power to make these calls in order to protect the integrity of the network.
 
 Complete decentralization creates great opportunity for fraud. ([NFT rug pulls](https://www.perplexity.ai/search/what-is-an-nft-rug-pull-and-wh-l2MUzbggRFGpyJ83Mf1A7w)).
@@ -166,6 +173,7 @@ This is similar to how some real estate investment platforms operate - they use 
 ```
 
 ### Next steps
+
 1. Come up with a spec of this system. The magic is in the details, and this essay only serves as a primer to give a high level understanding of this system. A spec will represent ideal state of this system that we aspire to achieve, without regarding the legal / technical realities of the world. This spec will act as a North Star to help us prioritize and focus.
 2. Thorough analysis of the messy realities of the world to understand diff(north_star, reality) and have a plan to bridge the gap.
 3. Find motivated, determined, highly competent people to work with and bring this to life - across domains: legal, technical, design, etc.
