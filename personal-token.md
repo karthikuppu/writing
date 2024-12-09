@@ -42,7 +42,7 @@ As AI becomes better, the power law distribution of outcomes will become more ex
 
 Personal tokens enables those with potential to gain access to valuable capital that they likely wouldn't have access to otherwise - regardless of background.
 
-_(Further reading: my [previous essay](/vc-learning) that dives into this in greater depth)._
+[Further reading](/vc-learning).
 
 ### A new primitive
 
@@ -174,11 +174,15 @@ This is similar to how some real estate investment platforms operate - they use 
 
 ### Next steps
 
-1. Come up with a spec of this system. The magic is in the details, and this essay only serves as a primer to give a high level understanding of this system. A spec will represent ideal state of this system that we aspire to achieve, without regarding the legal / technical realities of the world. This spec will act as a North Star to help us prioritize and focus.
+1. Flesh out a spec of this system. The magic is in the details. This spec will act as a North Star to help us prioritize and focus.
 2. Thorough analysis of the messy realities of the world to understand diff(north_star, reality) and have a plan to bridge the gap.
-3. Find motivated, determined, highly competent people to work with and bring this to life - across domains: legal, technical, design, etc.
 
-To be clear, parts (or even all) of my thinking above will likely change as I continue to learn.
+### Current focus
+
+- Figuring out the best legal structure to implement personal tokens to minimize burden on users.
+- Getting feedback.
+
+---
 
 I'm looking to bring together a small group of ambitious, talented, hard working individuals to bring this to life. If you're interested in exploring this with me, [reach out](https://x.com/saltykarthik). LFG.
 
