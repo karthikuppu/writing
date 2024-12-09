@@ -5,7 +5,7 @@ src: https://github.com/karthikuppu/writing/commits/main/personal-token.md
 heroImageSrc: /images/individual/individual.png
 ---
 
-_This essay is an early exploration of a financial instrument (personal tokens) that lets people raise money in exchange for equity in their future outcomes. This is a continuation of my [previous essay](/vc-learning) ("VC will be the best way to finance learning") in which I explore why we will need personal tokens to democratize access to opportunity as AI becomes more powerful._
+_This essay is an early exploration of a financial instrument (personal token) that lets people raise money in exchange for equity in their future outcomes. This is a continuation of my previous [essay](/vc-learning) ("VC will be the best way to finance learning") in which I explore why we will need personal tokens to democratize access to opportunity as AI becomes more powerful._
 
 ### A personal token
 
