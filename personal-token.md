@@ -170,12 +170,10 @@ The key to making this work is ensuring that the legal agreements and blockchain
 This is similar to how some real estate investment platforms operate - they use a series LLC structure to separate different properties while maintaining a unified platform for investors.
 ```
 
-### Next steps
+### Next
 
 1. Flesh out a spec of this system. The magic is in the details. This spec will act as a North Star to help us prioritize and focus.
 2. Thorough analysis of the messy realities of the world to understand diff(north_star, reality) and have a plan to bridge the gap.
-
----
 
 I'm sharing what I'm learning along the way [on X](https://x.com/saltykarthik).
 
