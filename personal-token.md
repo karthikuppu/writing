@@ -5,7 +5,7 @@ src: https://github.com/karthikuppu/writing/commits/main/personal-token.md
 heroImageSrc: /images/individual/individual.png
 ---
 
-_This essay is an early exploration of a financial instrument (personal token) that lets people raise money in exchange for equity in their future outcomes. This is a continuation of my previous [essay](/vc-learning) ("VC will be the best way to finance learning") in which I explore why we will need personal tokens to democratize access to opportunity as AI becomes more powerful._
+This essay is an early exploration of a financial instrument (personal token) that lets people raise money in exchange for equity in their future outcomes. This is a continuation of my previous [essay](/vc-learning) ("VC will be the best way to finance learning") in which I explore why we will need personal tokens to democratize access to opportunity as AI becomes more powerful.
 
 ### A personal token
 
@@ -68,19 +68,17 @@ In addition to trust, creating a personal token should be fast, simple, and affo
 
 ### How
 
-#### A network
-
 Personal tokens exist in a network of people. Each person in this network would have a personal token associated with them. Each person can only have one personal token.
 
 This network and its transactions will be implemented with a blockchain.
 
 Using a blockchain as the source of truth for the network helps create confidence in the network as it can be verified by anyone. Even though we'll need some centralized authority to help minimize fraud (as I'll discuss below), implementing the network with a blockchain makes the actions of the centralized authority more transparent - open to critique and pressure from the users in the network. A blockchain also allows for a more efficient implementation of rules through [smart contracts](https://en.wikipedia.org/wiki/Smart_contract).
 
-#### Distribution when personal token equity is sold (on chain).
+#### Distribution when personal token equity is sold (on chain):
 
 Implementing capital distribution within the network (when equity in another personal token is sold) is straightforward: through a smart contract. When Alice successfully sells her equity in a personal token, some of it is automatically siphoned off by the smart contract to the wallets of those who hold equity in Alice's personal token - proportional to how much equity they hold.
 
-#### Distribution when company equity is sold (off chain).
+#### Distribution when company equity is sold (off chain):
 
 Implementing capital distribution when Alice sells equity in a company is more challenging. When equity in a company is cashed out, Alice technically "owes" those who hold equity in her personal token their share of the capital Alice gained from selling equity in a company.
 
@@ -90,7 +88,7 @@ Equity in the real world must be reflected on chain, and must be kept in sync.
 
 <TODO>Propose good ways to record and sync on chain record of equity in companies with reality.</TODO>
 
-#### Preventing fraud.
+#### Preventing fraud:
 
 Let's say Dan is a bad actor: he wants to raise money on this network without any intention to actually create value in the world (or hide it) and just run away with the money he raises from investors. Dan would then be incentivized to hide his successes in the real world from the network so that he doesn't have to pay investors their share of the value he's created in the world.
 
@@ -102,15 +100,15 @@ Some ideas on how this can be done:
 2. Track their successes in the real world and identify discrepancies (e.g. they may say they joined a startup on LinkedIn, but haven't reported that they've gained equity in a company to their investors).
 3. Ensure all investments comply with regulations around securities so that in the case of fraud users have access to the courts to sue fraudsters. As the network becomes more powerful, it will rely less on the public courts, and more on incentives that will keep people in line (i.e. people will not be want to lose out on the opportunity to profit from personal tokens).
 
-#### Identity.
+#### Identity:
 
 In order to implement these ideas, each user must be associated with their real-world identity (e.g. government issued ID / something like [WorldID](https://world.org/world-id)). Users can't just create new personal tokens and disassociate with their past.
 
-#### Privacy.
+#### Privacy:
 
 Privacy can be supported via [zero knowledge proofs](https://vitalik.eth.limo/general/2021/01/26/snarks.html) so that a person can keep information about their investments private.
 
-#### Sufficiently decentralized governance.
+#### Sufficiently decentralized governance:
 
 I currently can't see a way in which the network can be completely decentralized because if it were, how would fraud be identified, and how would bad actors be kicked out of the network? Actions like these can't just be put to a vote. There needs to be some central authority with the power to make these calls in order to protect the integrity of the network.
 
@@ -118,7 +116,7 @@ Complete decentralization creates great opportunity for fraud. ([NFT rug pulls](
 
 Governance of the centralized authority will need to be well designed. Over time, the central authority should lose power (proportional to how good AI becomes). Its decision making should be transparent. And there should probably be a way for the network to vote on certain decisions.
 
-#### Legal.
+#### Legal:
 
 From a legal standpoint, a personal token is undeniably a [security](https://law.duke.edu/lib/research-guides/securities). Trying to present it as something else in order to skirt laws is a shortsighted, unambitious approach. We'll need to constantly strive to be compliant with regulations (and help define them in the many emerging legal gray areas), to be able to build a system that will last.
 
@@ -177,12 +175,9 @@ This is similar to how some real estate investment platforms operate - they use 
 1. Flesh out a spec of this system. The magic is in the details. This spec will act as a North Star to help us prioritize and focus.
 2. Thorough analysis of the messy realities of the world to understand diff(north_star, reality) and have a plan to bridge the gap.
 
-### Current focus
-
-- Figuring out the best legal structure to implement personal tokens to minimize burden on users.
-- Getting feedback.
-
 ---
+
+I'm sharing what I'm learning along the way [on X](https://x.com/saltykarthik).
 
 I'm looking to bring together a small group of ambitious, talented, hard working individuals to bring this to life. If you're interested in exploring this with me, [reach out](https://x.com/saltykarthik). LFG.
 
