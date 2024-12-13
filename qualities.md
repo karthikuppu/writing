@@ -181,9 +181,9 @@ Ego is a unidirectional circle. Massive ego looks like "low ego" from the outsid
 
 Naturally, my intuitions about the kind of person I want to work with are grounded in my beliefs  about how to do great work & about the human condition. This essay isn't an attempt to explain why I believe what I do, or to convince anyone that this is a good way to determine who to work with. I'm simply stating what I'm looking for.
 
-There's a lot of overlap between these qualities and they often emerge together. For example, it's only when you find what you're naturally talented at that you'll really love what you do, and you'll find it easier to concentrate, etc.
+There's a lot of overlap between these qualities and they often emerge together. For example, it's only when you find what you're naturally talented at that you'll really love what you do, and you'll find it easier to concentrate, etc. Or that when you're more calm, your natural inclinations are more likely to present themselves than if you always try to force it.
 
-I suspect I'll be editing this essay for many years to come. This is probably the highest leverage essay I'll ever write because who you choose to spend time with with is the highest leverage decision in life. It makes sense to think extremely deeply about this.
+I suspect I'll be editing this essay for many years to come. This is probably the highest leverage essay I'll ever write because who you choose to spend time with with is the highest leverage decision. It makes sense to think extremely deeply about this.
 
 </Footnotes>
 
