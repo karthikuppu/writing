@@ -10,7 +10,7 @@ As artificial intelligence becomes more powerful, our work will become more comp
 
 In addition, contrary to popular opinion, as AI becomes more capable, the cost of education will increase, not decrease. Paying for education won't work because most won't earn back their investment on a reasonable timeline, if ever.
 
-As the world becomes more creative and the power law distribution of outcomes becomes more skewed towards the top, venture capital (VC): _putting money in the hands of individuals in exchange for a small ownership in the outcomes they generate (e.g. the companies they will create, or the assets they will own in the future)_, will be the best (and eventually only) way to finance learning.
+As the world becomes more creative and the power law distribution of outcomes becomes more skewed towards the top, venture capital (VC) - **putting money in the hands of individuals in exchange for a small ownership in the outcomes they generate (e.g. the companies they will create, or the assets they will own in the future)** - will be the best (and eventually only) way to finance learning.
 
 Teachers, mentors, and educational institutes will monetize through VC.
 
@@ -225,6 +225,7 @@ Those who investors don't want to invest in will need some sort of basic income 
 Regressing, by eliminating AI advancements that make our work more complex & creative, is stupid because the benefits of AI will far outweigh the negatives.
 
 We have no choice but to adapt & [personal tokens](/personal-token) will be an important piece of the puzzle. If you're interested in exploring this with me, [please reach out](https://x.com/saltykarthik).
+
 ### Notes
 
 <Footnotes>
