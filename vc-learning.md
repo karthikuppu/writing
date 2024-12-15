@@ -6,11 +6,13 @@ started: November 2024
 heroImageSrc: /images/vc-learning/vc-learning.png
 ---
 
-As artificial intelligence becomes more powerful, our work will become more complex, creative, and will increasingly follow a power law distribution of outcomes: fewer will capture the majority of the outcomes. As outcomes become more skewed to the top, the median outcome will increasingly feel insufficient. Most people will not make enough.
+As artificial intelligence becomes more powerful, our work will become more complex, creative, and will increasingly follow a power law distribution of outcomes: fewer will contribute the majority of the outcomes. 
 
-In addition, contrary to popular opinion, as AI becomes more capable, the cost of education will increase, not decrease. Paying for education won't work because most won't earn back their investment on a reasonable timeline, if ever.
+As outcomes become more skewed to the top, the median outcome will increasingly feel insufficient. Most people will not make enough. In addition, contrary to popular opinion, as AI becomes more capable, the cost of education will increase, not decrease. Paying for education won't work because most won't earn back their investment on a reasonable timeline, if ever.
 
-As the world becomes more creative and the power law distribution of outcomes becomes more skewed towards the top, venture capital (VC) - **putting money in the hands of individuals in exchange for a small ownership in the outcomes they generate (e.g. the companies they will create, or the assets they will own in the future)** - will be the best (and eventually only) way to finance learning.
+If this prediction turns out to be true, our education system, which relies predominantly on charging money in exchange for education, is on the verge of collapse. 
+
+A new way to finance learning will emerge: venture capital. Venture capital (VC) - **putting money in the hands of individuals in exchange for a small ownership in the outcomes they generate (e.g. the companies they will create, or the assets they will own in the future)** - will be the best (and eventually only) way to finance learning as AI makes the power law distribution of outcomes more extreme.
 
 Teachers, mentors, and educational institutes will monetize through VC.
 
