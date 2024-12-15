@@ -6,11 +6,11 @@ started: November 2024
 heroImageSrc: /images/vc-learning/vc-learning.png
 ---
 
-As artificial intelligence becomes more powerful, our work will become more complex, creative, and will increasingly follow a power law distribution of outcomes: fewer will contribute the majority of the outcomes. 
+As artificial intelligence becomes more powerful, our work will become more complex, creative, and will increasingly follow a power law distribution of outcomes: fewer will contribute the majority of the outcomes.
 
 As outcomes become more skewed to the top, the median outcome will increasingly feel insufficient. Most people will not make enough. In addition, contrary to popular opinion, as AI becomes more capable, the cost of education will increase, not decrease. Paying for education won't work because most won't earn back their investment on a reasonable timeline, if ever.
 
-If this prediction turns out to be true, our education system, which relies predominantly on charging money in exchange for education, is on the verge of collapse. 
+If this prediction turns out to be true, our education system, which relies predominantly on charging money in exchange for education, is on the verge of collapse.
 
 A new way to finance learning will emerge: venture capital. Venture capital (VC) - **putting money in the hands of individuals in exchange for a small ownership in the outcomes they generate (e.g. the companies they will create, or the assets they will own in the future)** - will be the best (and eventually only) way to finance learning as AI makes the power law distribution of outcomes more extreme.
 
@@ -24,45 +24,19 @@ The more complex a skill is, the more creative you need to be to become good at 
 
 The power law distribution (a few contribute most of the outcomes) dominates all creative fields:
 
-<MultiplePictures
-pictures={[
-{
-label: "Patreon",
-imageSrc: "/images/vc-learning/patreon-power-law.png",
-sourceLink: "https://every.to/p/power-laws-have-more-power-than-you-think"
-},
-{
-label: "Netflix",
-imageSrc: "/images/vc-learning/netflix-power-law.png",
-sourceLink: "https://every.to/p/power-laws-have-more-power-than-you-think"
-},
-{
-label: "Spotify",
-imageSrc: "/images/vc-learning/spotify-power-law.png",
-sourceLink: "https://every.to/p/power-laws-have-more-power-than-you-think"
-},
-{
-label: "Youtube",
-imageSrc: "/images/vc-learning/youtube-power-law.png",
-sourceLink: "https://www.mosaicventures.com/patterns/the-creator-economy-a-power-law"
-},
-{
-label: "OnlyFans",
-imageSrc: "/images/vc-learning/only-fans-power-law.png",
-sourceLink: "https://xsrus.com/the-economics-of-onlyfans"
-},
-{
-label: "Film",
-imageSrc: "/images/vc-learning/box-office-power-law.png",
-sourceLink: "https://every.to/p/power-laws-have-more-power-than-you-think"
-},
-{
-label: "Various",
-imageSrc: "/images/vc-learning/arts-power-law.png",
-sourceLink: "https://andrewchen.com/creator-economy-20/"
-}
-]}
-/>
+<Image src={"/images/vc-learning/patreon-power-law.png"} title="Patreon" sourceUrl="https://every.to/p/power-laws-have-more-power-than-you-think" />
+
+<Image src={"/images/vc-learning/netflix-power-law.png"} title="Netflix" sourceUrl="https://every.to/p/power-laws-have-more-power-than-you-think" />
+
+<Image src={"/images/vc-learning/spotify-power-law.png"} title="Spotify" sourceUrl="https://every.to/p/power-laws-have-more-power-than-you-think" />
+
+<Image src={"/images/vc-learning/youtube-power-law.png"} title="Youtube" sourceUrl="https://www.mosaicventures.com/patterns/the-creator-economy-a-power-law" />
+
+<Image src={"/images/vc-learning/only-fans-power-law.png"} title="OnlyFans" sourceUrl="https://xsrus.com/the-economics-of-onlyfans" />
+
+<Image src={"/images/vc-learning/box-office-power-law.png"} title="Film Box Office Revenue" sourceUrl="https://every.to/p/power-laws-have-more-power-than-you-think" />
+
+<Image src={"/images/vc-learning/arts-power-law.png"} title="Various" sourceUrl="https://andrewchen.com/creator-economy-20/" />
 
 There is no "middle class" for creative skills. If you make it, you make it big, else you struggle to get by. The greater the outcomes for the best, the lower the median outcome.
 
