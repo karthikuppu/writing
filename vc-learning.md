@@ -10,7 +10,7 @@ As artificial intelligence becomes more powerful, our work will become more comp
 
 As a result, it will no longer make sense for people to shell out a lot of money for education because most won't be able to earn back their investments on a reasonable timeline, if at all.
 
-A new way to finance learning will emerge: venture capital. Venture capital (VC) - **putting money in the hands of individuals in exchange for a small ownership in the outcomes they generate (e.g. the companies they will create, or the assets they will own in the future)** - will be the best (and eventually only) way to finance learning as AI makes the power law distribution of outcomes more extreme. 
+A new way to finance learning will emerge: venture capital. Venture capital (VC) - **putting money in the hands of individuals in exchange for a small ownership in the outcomes they generate (e.g. the companies they will create, or the assets they will own in the future)** - will be the best (and eventually only) way to finance learning as AI makes the power law distribution of outcomes more extreme.
 
 Teachers, mentors, and educational institutes will monetize through VC.
 
@@ -198,7 +198,7 @@ Those who investors don't want to invest in will need some sort of basic income 
 
 Regressing, by eliminating AI advancements that make our work more complex & creative, is stupid because the benefits of AI will far outweigh the negatives.
 
-We have no choice but to adapt & [personal tokens](/personal-token) will be an important piece of the puzzle. If you're interested in exploring this with me, [please reach out](https://x.com/saltykarthik).
+We have no choice but to adapt & personal tokens will be an important piece of the puzzle.
 
 ### Notes
 

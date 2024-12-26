@@ -18,7 +18,7 @@ Ambition can be found anywhere: business, arts, sports, politics, parenting, hea
 
 True ambition is rare. Most who claim to be ambitious only want to gain status that puts them "above" their peers. They're not actually committed to pushing the frontier. This is why many "ambitious" people end up in undifferentiated, mediocre, middle management roles.
 
-I've yet to find an example of someone who wasn't ambitious become highly ambitious. They may exist, but because I haven't seen one, I operate with the belief that it's not possible to become highly ambitious from a low ambition starting point. You either have it or you don't. But, I have seen people who were only moderately ambitious become highly ambitious over time as they gained confidence in their abilities. I've also seen life beat ambition out of people. Protecting & cultivating ambition is a skill. 
+I've yet to find an example of someone who wasn't ambitious become highly ambitious. They may exist, but because I haven't seen one, I operate with the belief that it's not possible to become highly ambitious from a low ambition starting point. You either have it or you don't. But, I have seen people who were only moderately ambitious become highly ambitious over time as they gained confidence in their abilities. I've also seen life beat ambition out of people. Protecting & cultivating ambition is a skill.
 
 I want to work with ambitious people, with the skill to protect and cultivate their ambition, because they push me to dream bigger, and do better work.
 
@@ -57,6 +57,7 @@ Writing isn't just a process to communicate what you've already thought about, i
 I care more about quality of writing than speaking (whether in front of an audience, or even in a team setting) because communicating well via speaking requires a set of skills that aren't necessary for thinking well. A great thinker can be a horrible speaker because they are shy, or their minds race too fast for their voice to keep up, or for other reasons. But, there is no excuse for poor, muddled writing.
 
 Poor writing points to terrible judgement because poor writing is almost always caused by:
+
 1. not prioritizing the value of communicating something well.
 2. or, not giving yourself enough time and space to think things through, and get feedback.
 
@@ -87,6 +88,7 @@ A distracted mind has no space to think critically because it's constantly pulle
 Even in situations that require switching between many things in quick succession, a concentrated mind gives you greater control over which distractions you allow your mind to go to and how long you keep it there.
 
 Concentration is a muscle that can be trained, therefore when I see people without the ability to concentrate on something for long periods of time, it tells me:
+
 - they don't prioritize this ability. (bad judgement).
 - they don't know how to train their ability to concentrate. (bad judgement + incompetence because if they understood the value of this ability they would have obsessed over finding ways to train it).
 - they're innately incapable of concentrating, perhaps due to some underlying biological cause.
@@ -99,13 +101,11 @@ Mental balance is a force multiplier for every aspect of the human experience. A
 
 Mental balance increases endurance. The greatest drain on our energies is negative emotional reactions such as fear, anxiety, anger, etc. Calmer people can concentrate better and work for much longer periods of time without getting tired.
 
-Mental balance helps us seek truth. Failure is caused by not seeing the truth: when we see what we want to see rather than see reality as it is, we act in ways that are mis-aligned with reality: building products no one wants, misunderstanding what someone is saying, etc. 
+Mental balance helps us seek truth. Failure is caused by not seeing the truth: when we see what we want to see rather than see reality as it is, we act in ways that are mis-aligned with reality: building products no one wants, misunderstanding what someone is saying, etc.
 
 Cultivating mental balance requires training combined with the right lifestyle.
 
-The mind and body are deeply interconnected. How you treat the body reflects on your state of mind. Relying on alcohol to wind down, doing hard drugs, overdoing caffeine, being addicted to pornography / masturbation / sugar, all destabilize the mind. 
-
-Whereas regular exercise, a healthy diet, regular fasting, and channeling a [flow state](https://en.wikipedia.org/wiki/Flow_(psychology)), cultivate mental balance.
+The mind and body are deeply interconnected. How you treat the body reflects on your state of mind. Addictions of any kind destabilize the mind. Whereas regular exercise, a healthy diet, regular fasting, and channeling a [flow state](<https://en.wikipedia.org/wiki/Flow_(psychology)>), cultivate mental balance.
 
 I want to work with people who prioritize mental balance and are great at cultivating it.
 
@@ -155,7 +155,7 @@ I acknowledge there will be exceptions, but I believe the exceptions are so rare
 
 ### Massive ego
 
-Common hiring "wisdom" is to find people with "low egos". 
+Common hiring "wisdom" is to find people with "low egos".
 
 What this means in practice is you'll get people who don't care enough about their work and will allow their ideas to be trampled by others even if they believe their ideas are better - i.e. people who prioritize not rocking the boat when the boat should in fact be rocked.
 
@@ -175,15 +175,14 @@ I want to work with people with egos so large that if they believe that their vi
 
 Ego is a unidirectional circle. Massive ego looks like "low ego" from the outside. You can only increase your ego. The path to dissolving the ego is escaping the circle altogether, which is a skill so rare that I don't believe anyone who says they have it. Therefore, I'm stuck trying to find people with massive egos.
 
-###  Notes
+### Notes
 
 <Footnotes>
 
-Naturally, my intuitions about the kind of person I want to work with are grounded in my beliefs  about how to do great work & about the human condition. This essay isn't an attempt to explain why I believe what I do, or to convince anyone that this is a good way to determine who to work with. I'm simply stating what I'm looking for.
+Naturally, my intuitions about the kind of person I want to work with are grounded in my beliefs about how to do great work & about the human condition. This essay isn't an attempt to explain why I believe what I do, or to convince anyone that this is a good way to determine who to work with. I'm simply stating what I'm looking for.
 
 There's a lot of overlap between these qualities and they often emerge together. For example, it's only when you find what you're naturally talented at that you'll really love what you do, and you'll find it easier to concentrate, etc. Or that when you're more calm, your natural inclinations are more likely to present themselves than if you always try to force it.
 
 I suspect I'll be editing this essay for many years to come. This is probably the highest leverage essay I'll ever write because who you choose to spend time with with is the highest leverage decision. It makes sense to think extremely deeply about this.
 
 </Footnotes>
-

@@ -2,27 +2,21 @@
 title: Personal token white paper v0.1
 started: December 2024
 src: https://github.com/karthikuppu/writing/commits/main/personal-token.md
-heroImageSrc: /images/individual/individual.png
+external: https://karthikuppu.notion.site/Personal-Token-white-paper-v0-1-1667f8a8605d80a7a1f6ea8bee7ae573
 ---
 
-This essay is an early exploration of a financial instrument (personal token) that lets people raise money in exchange for equity in their future outcomes. This is a continuation of my previous [essay](/vc-learning) ("VC will be the best way to finance learning") in which I explore why we will need personal tokens to democratize access to opportunity as AI becomes more powerful.
+A personal token is a fictional entity that represents your economic value creation potential.
 
-### A personal token
+Your personal token is grounded the value of:
 
-A personal token is a fictional entity that represents an individual's equity in two kinds of assets:
+1. Your equity in other personal tokens.
+2. Your equity in companies.
 
-1. Equity in other personal tokens.
-2. Equity in companies.
+You can raise money from investors by selling equity in your personal token.
 
-![personal token](/images/personal-token/personal-token.png)
+In a sense, the personal token is an abstraction that _sits on top_ of the companies, capital, and assets an individual accumulates over their lives, similar to how money is an abstraction that sits on top of the specific goods that are traded.
 
-A user (Alice) can raise money from others in the network by selling equity in her personal token. This represents Alice giving up equity in her future outcomes in exchange for valuable capital today that would help Alice generate outcomes.
-
-Over time, Alice will create value for herself and her investors by earning equity in companies by creating, working at, or investing in them, and also by earning equity in personal tokens by investing in them.
-
-When Alice sells her equity in a personal token, or sells her equity in a company, a portion of the capital she gains goes to those who hold equity in Alice's personal token - proportional to how much equity they hold.
-
-With such a personal token system, ambitious individuals can raise money by selling equity in their future outcomes. They can raise money much earlier in their learning journey, perhaps even years before they actually start their own company or work at one.
+Personal tokens are particularly useful for ambitious, driven individuals because it allows them to raise valuable capital _before_ they may have clarity about the project they're going to work on, the research they'll do.
 
 Examples:
 
@@ -34,6 +28,8 @@ Amy is an undergrad researching nuclear power. She just published a paper that w
 
 Maya doesn't consider her investment in Amy to be that risky because Maya is convinced that nuclear power will create incredible economic value within a couple of decades, and that the skills Amy will build through her research - regardless of how successful her current research direction is - will make Amy very wealthy, and therefore will make Maya wealthy.
 
+In this paper I propose what this personal token system could look like, and how to implement it. I'd appreciate your feedback.
+
 ### Why
 
 We will need personal tokens to be able to democratize access to opportunity.
@@ -42,148 +38,100 @@ As AI becomes better, the power law distribution of outcomes will become more ex
 
 Personal tokens enables those with potential to gain access to valuable capital that they likely wouldn't have access to otherwise - regardless of background.
 
-[Further reading](/vc-learning).
+[Further reading](https://www.karthikuppu.com/vc-learning).
 
-### A new primitive
+### Core mechanics
 
-How is a personal token different than just a company that you create to represent your investments in other companies - sort of like a VC firm? Why is a new sort financial instrument necessary?
+This system exists as a network ("Network") of users, their personal tokens, and the metadata required to keep track of who owns how much of what.
 
-To be clear, the starting point for a personal token from a legal perspective may very well look like a "company" with a few modifications [1]. But, there are crucial differences between a personal token and a company that it makes sense to treat them differently.
+When a user joins the Network, a personal token is issued for them by the Network.
 
-A personal token is inseparable from the individual. Unlike a company who's owners can change entirely, an individual can't give away their personal token such that they no longer have it. In another sense, a personal token is like an abstraction "above" all the companies that a person will have equity in.
+Each personal token is tied to a single user. A user cannot own more than one personal token.
 
-A personal token also represents a different sort of behavior: investing in people _before_ they may have something specific that they are going to create. Companies are generally formed when there is a specific product or service that the founders want to create.
+#### User
 
-Even if the underlying implementation is a "company", from a use-case, behavioral, social context, a personal token is a new financial primitive.
+A user is a human [ai_can_have_personal_token] who has verified their identity (via a government issued ID or something like [WorldID](https://world.org/world-id)).
 
-### Priorities
+#### Personal token
 
-Before we think about how to implement this personal token system, we need to know what our priorities are so that we can make the right trade-offs.
+A personal token is a structure that holds the following information:
 
-**Trust** is the foundation of this system. Without trust, capital won't flow into the network of personal tokens because people won't be sure of the returns even if they invested in the right tokens. People don't play when they think the game might be rigged.
+- **user**
+- **wallet** (holds money that the user can deposit, withdraw. when a user invests in other personal tokens $ is withdrawn from this wallet. when the user raises capital by selling equity in this personal token, $ is added to this wallet).
+- **shares**
+- **totalShares** (the number of units this token is divided into, which represents the least amount that can be owned by others).
+- **outstandingShares** (Shares currently in circulation)
+- **sharePrice** (how much each share is worth in USD).
+- **ownership** (a list of other personal tokens that own a part of this personal token, how much each owns, and when equity was bought).
+- **assets** (the other personal tokens and companies this personal token has ownership of).
+- **history** (all previous transactions involving this personal token: all the other personal tokens this token has owned, sold, and all previous fundraising rounds).
 
-Investors should have confidence that they will receive payouts. They should have confidence in the system's ability to prevent fraud. They should have some recourse in the case of fraud (i.e. an individual raises money and runs with it, or doesn't accurately disclose their earnings from equity sales).
+As we work through finer details, we'll add more information to this core data structure. (note: all data structures will be defined more formally below in the "Implementation" section).
 
-In addition to trust, creating a personal token should be fast, simple, and affordable. Eventually, everyone will just have one by default similar to IDs, etc. Also, capital distribution - when an individual sells equity in a company or a personal token, what they gain is distributed amongst holders of their personal token proportional to how much equity they have - should become instantaneous. But, nothing matters without sufficient trust.
+#### Raise
 
-### How
+A user can raise capital by selling equity in their personal token.
 
-Personal tokens exist in a network of people. Each person in this network would have a personal token associated with them. Each person can only have one personal token.
+When a user initiates a raise, they specify:
 
-This network and its transactions will be implemented with a blockchain.
+1. Number of shares being offered.
+2. Price per share.
+3. Minimum investment amount
+4. Total fundraising target
 
-Using a blockchain as the source of truth for the network helps create confidence in the network as it can be verified by anyone. Even though we'll need some centralized authority to help minimize fraud (as I'll discuss below), implementing the network with a blockchain makes the actions of the centralized authority more transparent - open to critique and pressure from the users in the network. A blockchain also allows for a more efficient implementation of rules through [smart contracts](https://en.wikipedia.org/wiki/Smart_contract).
+A new, active, fundraising "round" is created on the user's personal token.
 
-#### Distribution when personal token equity is sold (on chain):
+<TODO>Visual for an active fundraising round.</TODO>
 
-Implementing capital distribution within the network (when equity in another personal token is sold) is straightforward: through a smart contract. When Alice successfully sells her equity in a personal token, some of it is automatically siphoned off by the smart contract to the wallets of those who hold equity in Alice's personal token - proportional to how much equity they hold.
+A user can share a link to this round to people interested in investing. They can even make their fundraise "public" on the network such that it can be discovered by other users. (There can be ways to restrict who the raise is visible to, for example: "only those who have invested before", or "those who I follow" on a social network like [Bluesky](https://bsky.app/) / [Farcaster](https://www.farcaster.xyz/), that the Network can plug into, etc.).
 
-#### Distribution when company equity is sold (off chain):
+A user interested in investing would signal their interest to the user raising capital, but would still need to be approved by the user raising capital in order to initiate the investment.
 
-Implementing capital distribution when Alice sells equity in a company is more challenging. When equity in a company is cashed out, Alice technically "owes" those who hold equity in her personal token their share of the capital Alice gained from selling equity in a company.
+There's scope for more constraints such as: "maximum investment amount" (to restrict the minimum number of investors to complete the round), etc.
 
-Alice will need to report this somehow, and be able to transfer value within the network to those who hold equity in Alice's personal token.
+A user can cancel an active fundraising round in case they change their minds, "complete" it before they reach their fundraising target.
 
-Equity in the real world must be reflected on chain, and must be kept in sync.
+When a round is completed, the Network completes the transaction: respective wallet values for all personal tokens involved in the transaction are updated, and so is the information about who owns how much of which personal tokens.
 
-<TODO>Propose good ways to record and sync on chain record of equity in companies with reality.</TODO>
+#### Invest
 
-#### Preventing fraud:
+Investors are just users in the Network who also have their own personal tokens that represent their ownership in other personal tokens and in companies (that exist outside of the Network).
 
-Let's say Dan is a bad actor: he wants to raise money on this network without any intention to actually create value in the world (or hide it) and just run away with the money he raises from investors. Dan would then be incentivized to hide his successes in the real world from the network so that he doesn't have to pay investors their share of the value he's created in the world.
+In order for an investor to accept an invitation to invest (when a user sends them an invite link for their round), or apply to invest (when the investor discovers an active round in the Network), they need sufficient capital in their personal token wallet to cover the investment amount.
 
-The success of this personal token network depends on how well it can dis-incentivize bad actors like Dan.
+Voting rights do not make sense in the context of a personal token because ownership of a personal token does not mean any sort of ownership over the life of the user behind the personal token.
 
-Some ideas on how this can be done:
+Unlike in companies, voting rights don't make sense in the context of personal tokens. An investor should not be able to force the action of the users associated with the personal tokens the investor has equity in.
 
-1. Once it's clear someone is a fraud, block them from participating in the network in the future: meaning they cannot invest in others' personal tokens. Over time this will be the most powerful lever to minimize fraud because the economic potential of investing in people will be enormous.
-2. Track their successes in the real world and identify discrepancies (e.g. they may say they joined a startup on LinkedIn, but haven't reported that they've gained equity in a company to their investors).
-3. Ensure all investments comply with regulations around securities so that in the case of fraud users have access to the courts to sue fraudsters. As the network becomes more powerful, it will rely less on the public courts, and more on incentives that will keep people in line (i.e. people will not be want to lose out on the opportunity to profit from personal tokens).
+#### Capital gains
 
-#### Identity:
+When a user sells their equity in another personal token, or equity in a company (outside of the Network), the capital gained from such a transaction is distributed amongst those who hold equity in this user's personal token - proportional to how much equity they hold.
 
-In order to implement these ideas, each user must be associated with their real-world identity (e.g. government issued ID / something like [WorldID](https://world.org/world-id)). Users can't just create new personal tokens and disassociate with their past.
+<TODO>A good, simple, example.</TODO>
 
-#### Privacy:
+### Reporting
 
-Privacy can be supported via [zero knowledge proofs](https://vitalik.eth.limo/general/2021/01/26/snarks.html) so that a person can keep information about their investments private.
+### Determining valuation
 
-#### Sufficiently decentralized governance:
+There is an art to determining the price per share.
 
-I currently can't see a way in which the network can be completely decentralized because if it were, how would fraud be identified, and how would bad actors be kicked out of the network? Actions like these can't just be put to a vote. There needs to be some central authority with the power to make these calls in order to protect the integrity of the network.
+### Conflict resolution
 
-Complete decentralization creates great opportunity for fraud. ([NFT rug pulls](https://www.perplexity.ai/search/what-is-an-nft-rug-pull-and-wh-l2MUzbggRFGpyJ83Mf1A7w)).
+### Incentives
 
-Governance of the centralized authority will need to be well designed. Over time, the central authority should lose power (proportional to how good AI becomes). Its decision making should be transparent. And there should probably be a way for the network to vote on certain decisions.
+- tackling fraud.
+- each user in the network should benefit from the activity in the network. they should have indirect equity in all the users of the network... a sort of a collective pool. this aligns incentives: people will want to attract the right people to the network, and help minimize fraud (which will hurt long-term potential of the network). what are good ways to implement these incentives?
 
-#### Legal:
+### Implementation
 
-From a legal standpoint, a personal token is undeniably a [security](https://law.duke.edu/lib/research-guides/securities). Trying to present it as something else in order to skirt laws is a shortsighted, unambitious approach. We'll need to constantly strive to be compliant with regulations (and help define them in the many emerging legal gray areas), to be able to build a system that will last.
+#### Legal
 
-We'll need to be creative because existing legal structures ("C corp", "LLC", etc.) weren't designed for personal tokens. We'll also need to design the system such that there isn't unnecessary friction to creating your personal token and raising money.
+#### Blockchain
 
-I don't have a legal background, so I have a lot of work to get up to speed. Most of my understanding so far has come from conversations with LLMs. I've yet to ground my intuitions in reality by studying the source of truth: the laws and precedents themselves. The following idea proposed by Claude (3.5 Sonnet) seems like an interesting angle to study in greater depth:
+#### Oracle
 
-```
-Let me help explain how we could structure this platform while navigating the regulatory requirements. I'll break this down into steps and explain both what needs to happen and why.
-
-First, let's understand what's happening from a regulatory perspective: When someone creates a personal equity token and sells portions of it to investors in exchange for money and with the expectation of future returns, they're creating a security. This is true regardless of whether it's on a blockchain or not - the underlying economic reality is what matters.
-
-Now, let's look at how we could structure this:
-
-Instead of individual LLCs, we could have your platform company create a master LLC with what's called a "series LLC" structure. Think of this like an apartment building where each apartment is legally separate from the others. Each personal token would be a separate series under this master LLC.
-
-Here's how it would work step by step:
-
-When a user creates their personal token:
-
-1. They provide identity verification (crucial for regulatory compliance)
-2. They sign a standardized contract that:
-    - Assigns their rights to future earnings to their specific series under the master LLC
-    - Defines what earnings are included (equity sales, etc.)
-    - Sets up their obligations to report earnings
-    - Establishes how proceeds will be distributed
-
-When they want to fundraise:
-
-1. Your platform (the master LLC) files a Form D for their specific series
-2. The fundraising link is technically an invitation to invest in that series
-3. When investors "apply," they go through accreditation verification
-4. The smart contract that records ownership percentages is connected to the legal rights established in the series LLC
-
-The advantage of this structure is that:
-
-1. Individual users don't need their own LLCs
-2. One master Form D filing can cover multiple series
-3. The blockchain records serve as a transparent ledger of ownership
-4. The legal structure provides enforceability
-
-However, this approach means your platform company takes on significant responsibilities:
-
-1. You'll need to register as an investment adviser or broker-dealer
-2. You'll need robust systems for tracking and distributing proceeds
-3. You'll need strong compliance procedures
-4. You'll need to manage tax reporting for all the series
-
-The key to making this work is ensuring that the legal agreements and blockchain implementation work together seamlessly. For example, when the smart contract records that someone owns 10% of a personal token, that needs to correspond to actual legal rights to 10% of the designated earnings under the series LLC structure.
-
-This is similar to how some real estate investment platforms operate - they use a series LLC structure to separate different properties while maintaining a unified platform for investors.
-```
-
-### Next
-
-1. Flesh out a spec of this system. The magic is in the details. This spec will act as a North Star to help us prioritize and focus.
-2. Thorough analysis of the messy realities of the world to understand diff(north_star, reality) and have a plan to bridge the gap.
-
-I'm sharing what I'm learning along the way [on X](https://x.com/saltykarthik).
-
-I'm looking to bring together a small group of ambitious, talented, hard working individuals to bring this to life. If you're interested in exploring this with me, [reach out](https://x.com/saltykarthik). LFG.
+### Contribute
 
 ### Notes
 
-<Footnotes>
-[1] For example, since a personal token isn't the same as a company, certain features of companies won't translate to personal tokens.
-- It probably doesn't make sense to give investors "voting rights" or to have some kind of "board of directors" that oversees the activities that the individual does. This curbs freedom that is bad for both the individual and the investors.
-- Might make sense to "cap" returns. E.g. when an investor makes 1000x their investment from a personal token, their equity in it is transferred back to its owner. 
-- Might need to limit how much of a personal token an individual can sell. e.g. if 99% of my future outcomes go to my investors, my life feels screwed.
-</Footnotes>
+[ai_can_have_personal_token] When our legal systems evolve to treat AI "beings" as their own individuals with ownership rights, we can probably allow AI beings to have their own personal tokens and raise money through them.
